@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>OATutor</title>
+<style>#forkongithub a{background:#fff;color:#000;text-decoration:none;font-family:arial,sans-serif;text-align:center;font-weight:bold;padding:5px 40px;font-size:1rem;line-height:2rem;position:relative;transition:0.5s;}#forkongithub a:hover{background:#c11;color:#fff;}#forkongithub a::before,#forkongithub a::after{content:"";width:100%;display:block;position:absolute;top:1px;left:0;height:1px;background:#000;}#forkongithub a::after{bottom:1px;top:auto;}@media screen and (min-width:800px){#forkongithub{position:fixed;display:block;top:0;right:0;width:200px;overflow:hidden;height:200px;z-index:9999;}#forkongithub a{width:200px;position:absolute;top:60px;right:-60px;transform:rotate(45deg);-webkit-transform:rotate(45deg);-ms-transform:rotate(45deg);-moz-transform:rotate(45deg);-o-transform:rotate(45deg);box-shadow:4px 4px 10px rgba(0,0,0,0.8);}}</style><span id="forkongithub"><a href="https://github.com/CAHLR/OATutor">Fork me on GitHub</a></span>	<style>
+		body {
+			font-family: 'Titillium Web', sans-serif;
+			margin: 0;
+			padding: 0;
+			background-image: url('assets/background.jpg');
+			background-repeat: no-repeat;
+			background-size: cover;
+			/* animation: parallax 10s infinite; */
+		}
+
+		header {
+          text-align: center;
+		  position: fixed;
+		  top: 0px;
+		  width: 100%;
+		}
+
+        nav {
+            background-color: #3f51b5;
+            color: #fff;
+            position: fixed;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            width: 100%;
+            padding: 5px;
+            justify-content:space-around;
+        }
+        nav h1 {
+            left: 0;
+            margin: 0;
+            font-size: 100%;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 75%;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            padding: 5px 0;
+            border-bottom: 2px solid transparent;
+        }
+
+        nav img {
+            height: 75%;
+            padding: 20px;
+        }
+        nav a:hover {
+            border-bottom: 2px solid #fff;
+        }
+		.dropdown {
+  			position: relative;
+  			display: inline-block;
+			border: none;
+			background-color: #3f51b5
+		}
+		.dropbtn {
+			background-color: #3f51b5;
+			color: white;
+			padding: 16px;
+			font-size: 16px;
+			border: none;
+			cursor: pointer;
+			font-family: 'Titillium Web', sans-serif;
+			font-size: 75%;
+			font-weight: bold;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			}
+
+		.dropdown-content {
+		display: none;
+		position: absolute;
+		background-color: #3f51b5; /* set the background color to match the nav bar */
+		min-width: 160px;
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		z-index: 1;
+		}
+
+	.dropdown-content a {
+	color: #fff; /* set the text color to white */
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+		h1, h3 {
+			text-align: center;
+			color: white;
+			margin: 0 auto;
+			font-weight: normal;
+		}
+
+		h1 {
+			font-size: 6rem;
+			margin-top: 100px;
+		}
+
+		h3 {
+			font-size: 2.25rem;
+			margin-top: 30px;
+		}
+
+		.news {
+			background-color: white;
+			padding: 20px;
+			margin: 50px 20%;
+			border-radius: 10px;
+			box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+		}
+		
+		iframe {
+			width: 50%;
+			height: 300;
+			display: block;
+			margin: 0 auto;
+		}
+
+		#container {
+			padding: 50px 0;
+		}
+        #title {
+            padding: 50px 0;
+        }
+        @keyframes parallax {
+		  0% {
+		    background-image: url('assets/background.jpg');
+		  }
+		  50% {
+		    background-image: url('assets/back.jpg');
+		  }
+		  100% {
+		    background-image: url('assets/background.jpg');
+		  }
+		}
+		
+	</style>
+	<link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+	
+<body>
+	<header id="header">
+        <nav>
+	        <a href="teachers.html">For Teachers</a>
+	        <a href="researchers.html">For Researchers</a>
+			<div class="dropdown">
+				<button class="dropbtn">Upcoming Workshops</button>
+				<div class="dropdown-content">
+					<a href="aied.html">AIED</a>
+					<a href="las.html">L@S</a>
+					<a href="ectel.html">ECTEL</a>
+				</div>
+			</div>
+		</nav>
+	</header>
+    <div id="container">
+        <div id="title">
+            <h1>OATutor</h1>
+        <h3>An Open Source Adaptive Tutoring System</h3>
+        </div>
+        <div id="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/1_dR9mSICNU" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+    
+	<script>
+	</script>
+</body>
+</html>
